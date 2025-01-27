@@ -1,3 +1,13 @@
+create table categories (
+    category_id integer primary key,
+    category_name varchar(50) not null
+);
+
+create table presenting_partners (
+    presenting_partner_id integer primary key,
+    presenting_partners_name varchar(50) not null
+);
+
 create table awards (
     award_id serial primary key,
     award_name varchar(100) not null,
@@ -5,16 +15,6 @@ create table awards (
     presenting_partner_id integer,
     foreign key (category_id) references categories (category_id) on delete cascade,
     foreign key (presenting_partner_id) references presenting_partners (presenting_partner_id) on delete set null
-);
-
-create table categories (
-    category_id integer primary key,
-    category_name varchar(50) not null
-);
-
-create table presenting_partners (
-    presenting_partner_id serial primary key,
-    presenting_partners_name varchar(50) not null
 );
 
 create table nominations (
