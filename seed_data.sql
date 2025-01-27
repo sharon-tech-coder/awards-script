@@ -13,7 +13,8 @@ values
     (2,'Network 10'),
     (3,'BINGE'),
     (4,'Spectrum Films'),
-    (5,'Casting Networks');
+    (5,'Casting Networks'),
+    (6,'Foxtel');
 
 insert into awards (award_name,category_id)
 values 
@@ -116,7 +117,24 @@ values
     ('Kirsty', 'McGregor'),
     ('Stevie', 'Ray'),
     ('Nathan', 'Lloyd'),
-    ('Leigh', 'Pickford');
+    ('Leigh', 'Pickford'),
+    ('Deborah', 'Mailman'),
+    ('Leah', 'Purcell'),
+    ('Phoebe', 'Tonkin'),
+    ('Anna', 'Torv'),
+    ('Sherry-Lee', 'Watson'),
+    ('Zac', 'Burgess'),
+    ('Felix', 'Cameron'),
+    ('Rob', 'Collins'),
+    ('Brendan', 'Cowell'),
+    ('Sam', 'Neill'),
+    ('Noah', 'Taylor'),
+    ('Shelley','Farthing-Dawe'),
+    ('Mark', 'Wareham'),
+    ('Aaron', 'McLisky'),
+    ('Simon', 'Duggan'),
+    ('Tyson', 'Perkins'),
+    ;
 
 
 insert into productions (production_name)
@@ -128,7 +146,12 @@ values
     ('The Twelve'),
     ('Heartbreak High'),
     ('Thou Shalt Not Steal'),
-    ('Total Control');
+    ('Total Control'),
+    ('Plum'),
+    ('High Country'),
+    ('Territory'),
+    ('Exposure')
+    ;
 
 insert into nominations (award_id, talent_id, production_id)
 values 
@@ -160,4 +183,23 @@ values
     (27,27,2),
     (27,28,3),
     (27,29,4),
-    (27,30,5);
+    (27,30,5),
+    (21,41,1),
+    (21,42,1),
+    (21,43,12),
+    (21,44,11),
+    (21,45,7),
+    (12,3,3),
+    (12,30,8),
+    (12,31,10),
+    (12,32,1),
+    (12,33,11),
+    (12,34,7),
+    (13,35,1),
+    (13,36,1),
+    (13,37,8),
+    (13,38,9),
+    (13,39,5),
+    (13,40,7)
+    ;
+
