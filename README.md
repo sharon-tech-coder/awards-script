@@ -10,7 +10,7 @@
 - A presenting partner can present zero or many awards.
 - A nominee or a winner can be either a talent or a production.
 - When a talent is nominated, there will be zero or one production associated.
-- When a production is nominated, there will be one or many talents associated. 
+- When a production is nominated, there will be zero or many talents associated. 
 - A talent can be nominated zero or many times for the same award (in different productions).
 - A production can be nominted zero or many times for the same award (with different episodes in technical craft awards).
 - A production is created by zero or many production companies.

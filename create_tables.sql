@@ -17,20 +17,26 @@ create table awards (
     foreign key (presenting_partner_id) references presenting_partners (presenting_partner_id) on delete set null
 );
 
-create table nominations (
-    nomination_id serial primary key,
-    award_id integer not null,
-    is_winner boolean default false
-    talent_id integer not null,
-    production_id integer,
-    nomination_year integer default 2025
-);
-
 create table talents (
     talent_id serial primary key,
     talent_fname varchar(50) not null,
     talent_lname varchar(50) not null,
     social_handle varchar(50)
+);
+
+create table production_companies (
+    production_co_id serial primary key,
+    production_co_name varchar(100) not null
+);
+
+create table distribution_companies (
+    distribution_co_id serial primary key,
+    distribution_co_name varchar(50) not null
+);
+create table episodes (
+    episode_id serial primary key,
+    episode_number integer not null,
+    episode_name varchar(50)
 );
 
 create table productions (
@@ -44,18 +50,11 @@ create table productions (
     foreign key (distribution_co_id) references distribution_companies (distribution_co_id) on delete set null
 );
 
-create table production_companies (
-    production_co_id serial primary key,
-    production_co_name varchar(50) not null
-);
-
-create table episodes (
-    episode_id serial primary key,
-    episode_number integer not null,
-    episode_name varchar(50)
-);
-
-create table distribution_companies (
-    distribution_co_id serial primary key,
-    distribution_co_name varchar(50) not null
+create table nominations (
+    nomination_id serial primary key,
+    award_id integer not null,
+    is_winner boolean default false,
+    talent_id integer,
+    production_id integer,
+    nomination_year integer default 2025
 );
