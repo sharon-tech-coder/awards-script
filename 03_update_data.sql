@@ -19,6 +19,11 @@ end
 where award_name in ('Best Casting in Television', 'Best Supporting Actress in a Drama', 'Best Supporting Actor in a Drama','Best Reality Program','Best Entertainment Program');
 
 -- update production stakeholders
+select p.production_id,p.production_name,ppc.production_co_id,pc.production_co_name
+from production_production_companies ppc
+join productions p on p.production_id = ppc.production_id
+join production_companies pc on ppc.production_co_id = pc.production_co_id;
+
 
 
 -- update episode numbers

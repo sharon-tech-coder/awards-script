@@ -133,8 +133,7 @@ values
     ('Mark', 'Wareham'),
     ('Aaron', 'McLisky'),
     ('Simon', 'Duggan'),
-    ('Tyson', 'Perkins'),
-    ;
+    ('Tyson', 'Perkins');
 
 
 insert into productions (production_name)
@@ -150,8 +149,7 @@ values
     ('Plum'),
     ('High Country'),
     ('Territory'),
-    ('Exposure')
-    ;
+    ('Exposure');
 
 insert into nominations (award_id, talent_id, production_id)
 values 
@@ -200,6 +198,30 @@ values
     (13,37,8),
     (13,38,9),
     (13,39,5),
-    (13,40,7)
-    ;
+    (13,40,7);
 
+insert into production_production_companies (production_id,production_co_id)
+values 
+    (1,9),
+    (2,6),
+    (3,1),
+    (4,3),
+    (4,4),
+    (5,6),
+    (5,5),
+    (6,2),
+    (7,7),
+    (8,8);
+
+insert into production_distribution_companies (production_id,distribution_co_id)
+values 
+    (1,2),
+    (2,4),
+    (2,5),
+    (3,1),
+    (4,3),
+    (5,4),
+    (5,5),
+    (6,2),
+    (7,6),
+    (8,7);
